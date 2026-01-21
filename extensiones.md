@@ -1,4 +1,4 @@
-# Extenciones para java
+# Extensiones para java
 Extension Pack for Java
 Language Support for Java™ by Red Hat
 Debugger for Java
