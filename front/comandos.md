@@ -5,4 +5,4 @@
 | nvm list | versificar lista versiones de node |
 | Set-ExecutionPolicy RemoteSigned -Scope CurrentUser | habilitar permisos |
 | nvm use xx | Para usar versión específica |
-| npm install -g @angular/cli | instalar @angular/cli ||
+| npm install -g @angular/cli | instalar @angular/cli |
