@@ -29,7 +29,7 @@ public class Empleado extends Persona{
         System.out.println("Soy el empleado " + getNombre() + " y mi salario es " + salario);
     }
     public double calcularSalarioMensual(){
-        double valorHora = salario/160;
+        double valorHora = salario/168;
         double salarioFinal = valorHora * horasTrabajadas;
         return salarioFinal;
     }
@@ -38,7 +38,7 @@ public class Empleado extends Persona{
         return getEdad() >= 18;
     }
     public boolean puedeTrabajar(){
-        return getEdad()>= 18 && activo==true;
+        return getEdad() >= 18 && activo==true;
     }
     
 }
