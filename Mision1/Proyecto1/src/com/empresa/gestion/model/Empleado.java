@@ -40,6 +40,10 @@ public class Empleado extends Persona {
         return salarioFinal;
     }
 
+    public String resumen(){
+        return "ID: " + id + "Nombre: " + nombre + "Edad: " + edad + "Activo: " + activo + "Genero: " + genero + "Salario Mensual: " + salario;
+    }
+
     // Agregamos reglas de negocio
     public boolean esMayorDeEdad() {
         return edad >= 18;
