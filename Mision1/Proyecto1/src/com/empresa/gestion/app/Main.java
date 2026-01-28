@@ -4,8 +4,8 @@ import com.empresa.gestion.service.NominaService;
 
 public class Main {
     public static void main(String[] args) {
-        Empleado empleado1 = new Empleado("Juan Manuel", 18, true, 'M', 1200, 168);
-        Gerente gerente1 = new Gerente("Alba Maria", 61, true, 'F', 5500, 168, 1500, "Ventas");
+        Empleado empleado1 = new Empleado(1, "Juan Manuel", 18, true, 'M', 1200, 168);
+        Gerente gerente1 = new Gerente(2, "Alba Maria", 61, true, 'F', 5500, 168, 1500, "Ventas");
         System.out.println();
         empleado1.presentarse();
         gerente1.presentarse();
