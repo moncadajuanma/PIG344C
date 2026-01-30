@@ -17,11 +17,22 @@
 
 <ul>
     @for (u of users; track u.id){
-        <li> {{ u.name }} - {{ u.email }} </li>
+        
+        <li>
+            <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{u.id}}</h5>
+            <p class="card-text">{{u.email}}</p>
+            <a href="#" class="btn btn-primary">{{u.name}}</a>
+            </div>
+            </div>
+        </li>
+
+        <!-- <li> {{ u.name }} - {{ u.email }} </li> -->
     }
 </ul>
 
 <div>
-
     <button > Botón sin Bootstrap</button>
 </div>
