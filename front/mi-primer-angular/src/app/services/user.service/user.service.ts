@@ -10,6 +10,6 @@ export class UserService {
   
   //Funcion para traer el listado de usuarios
   getUsers() {
-    return this.http.get<any[]>('user.json');
+    return this.http.get<any[]>('https://rickandmortyapi.com/api/character');
   }
 }

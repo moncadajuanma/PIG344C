@@ -6,33 +6,37 @@
         {{ u.name }} - {{ u.email }}
     </li>
 </ul> -->
-<div>
-    <button class="btn btn-primary mb-4"> Botón con Bootstrap</button>
 
+<!-- <div>
+  <button class="btn btn-primary mb-4">Botón con Bootstrap</button>
 </div>
-
 <p>Hola Mundo</p>
-
-<br>
-
-<ul>
-    @for (u of users; track u.id){
-        
-        <li>
-            <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">{{u.id}}</h5>
-            <p class="card-text">{{u.email}}</p>
-            <a href="#" class="btn btn-primary">{{u.name}}</a>
-            </div>
-            </div>
-        </li>
-
-        <!-- <li> {{ u.name }} - {{ u.email }} </li> -->
-    }
-</ul>
-
+<br />
 <div>
-    <button > Botón sin Bootstrap</button>
+  <button>Botón sin Bootstrap</button>
+</div>
+<li> {{ u.name }} - {{ u.email }} </li> -->
+
+<div class="row g-3">
+  @for (u of users; track u.id) {
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card" style="width: 18rem">
+        <img src="{{u.image}}" class="card-img-top" alt="Imagen de {{u.name}}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ u.name }}</h5>
+          <p class="card-text">
+            Practica de api con angular Bootcamp Talento Tech 2026
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Gender: {{u.gender}}</li>
+          <li class="list-group-item">Origin: {{u.origin.name}}</li>
+          <li class="list-group-item">Location: {{u.location.name}}</li>
+        </ul>
+        <div class="card-body">
+            <h6>{{u.status}} - {{u.species}}</h6>
+        </div>
+      </div>
+    </div>
+  }
 </div>
