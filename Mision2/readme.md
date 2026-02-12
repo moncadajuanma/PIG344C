@@ -17,3 +17,6 @@ Jar
 Sring Web
 Spring Data JPA
 PostgreSQL Driver
+
+.\mvnw.cmd spring-boot:run   //Iniciar servidor spring-boot
+./mvnw spring-boot:run       //Iniciar servidor spring-boot
